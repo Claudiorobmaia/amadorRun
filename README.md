@@ -1,4 +1,4 @@
-## Amador Run: Uma Plataforma de Busca para Tênis
+## Amador Run: Uma Plataforma de Busca para Tênis - Imersão Dev com Google Gemini
 
 ### Descrição
 O Amador Run é uma aplicação web simples que permite aos usuários pesquisar por modelos de tênis com base em marcas, descrições e tags. A aplicação utiliza tecnologias web fundamentais como HTML, CSS e JavaScript para oferecer uma interface intuitiva e eficiente.
