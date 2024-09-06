@@ -9,21 +9,20 @@ body {
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
-    height: 100vh; /* Preenche a altura total da viewport */
+    min-height: 100vh; /* Preenche a altura total da viewport */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
 }
 
 .image-container {
     text-align: center; /* Centraliza os elementos dentro do container */
-    margin-bottom: 20px; /* Cria um espaço entre as imagens e o H1 */
+    margin-bottom: 10px; /* Cria um espaço entre as imagens e o H1 */
 }
 
 .image-container img {
-    display: inline-block; /* Permite alinhar as imagens lado a lado */
-    width: 250px; /* Define a largura das imagens */
-    height: 250px; /* Define a altura das imagens */
-    margin: 0 30px; /* Adiciona uma margem entre as imagens */
+    width: 20%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Estiliza os títulos h1 */
@@ -131,6 +130,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+    min-height: 100vh; /* Preenche a altura total da viewport */
+    }
+
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
         letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
@@ -148,6 +151,12 @@ footer {
 
     .item-resultado h2 {
         font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+       
+      
     }
 }
 
@@ -179,5 +188,7 @@ footer {
 
     footer {
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+        position: absolute; /* Posiciona o rodapé */
+        bottom: 0; /* Alinha ao fundo da página */
     }
 }
